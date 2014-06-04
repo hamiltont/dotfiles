@@ -14,6 +14,11 @@ then
   source ~/.localrc
 fi
 
+# Download the latest configuration in the background. 
+# This will just dump either an "ok" or "not ok" message 
+# into the termal when done
+cd $ZSHDOT && git pull --ff-only &
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSHDOT/**/*.zsh)
@@ -42,6 +47,7 @@ done
 
 unset config_files
 
+# Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # Open new tabs in same working directory
