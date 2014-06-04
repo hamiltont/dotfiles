@@ -31,14 +31,14 @@ config_files=($ZSHDOT/**/*.zsh)
 for file in ${(M)config_files:#*/path.zsh}
 do
   $DEBUG && echo "Loading path $file"
-  source $file
+  source "$file"
 done
 
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
   $DEBUG && echo "Loading $file"
-  source $file
+  source "$file"
 done
 
 # initialize autocomplete here, otherwise functions won't be loaded
@@ -49,7 +49,7 @@ compinit
 for file in ${(M)config_files:#*/completion.zsh}
 do
   $DEBUG && echo "Loading completion $file"
-  source $file
+  source "$file"
 done
 
 unset config_files
@@ -57,9 +57,3 @@ unset config_files
 # Open new tabs in same working directory
 precmd () {print -Pn "\e]2; %~/ \a"}
 preexec () {print -Pn "\e]2; %~/ \a"}
-
-### Added by the Heroku Toolbelt
-export PATH="$PATH:/usr/local/heroku/bin"
-
-# added by travis gem
-[ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
