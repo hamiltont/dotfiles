@@ -37,6 +37,7 @@ done
 # Load oh-my-zsh (first, so topic.zsh files override this)
 if [[ -a $ZSH/oh-my-zsh.sh ]]
 then
+  $DEBUG && echo "Loading $file"
   source $ZSH/oh-my-zsh.sh
 else
   echo "Oh-my-zsh not found, downloading"
