@@ -8,6 +8,6 @@ ZSH_THEME="avit"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker common-aliases git-extras python rand-quote sbt scala screen svn wd tmux)
-# plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow)
+plugins=(git docker common-aliases git-extras python rand-quote sbt scala screen svn wd)
+# plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow tmux)
 
