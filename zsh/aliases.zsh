@@ -13,3 +13,10 @@ then
   alias ll="gls -l --color"
   alias la="gls -A --color"
 fi
+
+# Manually set HOME, because 'sudo -s' resets it on most modern
+# boxes via 'Defaults env_reset' in /etc/sudoers 
+#
+# Note: This will not auto-update, which is good (or root would
+#       own all your files)
+alias sume="sudo /bin/zsh -c 'HOME=/home/hamiltont; /bin/zsh'"
