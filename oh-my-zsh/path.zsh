@@ -4,12 +4,13 @@
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="kphoen"
 # ZSH_THEME="avit"
-ZSH_THEME="darkblood"
+ZSH_THEME="bira"
+# ZSH_THEME="darkblood"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# plugins=(git docker common-aliases git-extras python rand-quote sbt scala screen svn wd)
+plugins=(git docker common-aliases git-extras python rand-quote sbt scala screen svn wd)
 # plugins=(bower colorize brew-cask composer gem git-extras npm osx terminalapp vagrant autojump brew git-flow tmux)
 
 # Load oh-my-zsh (first, so topic.zsh files override this)

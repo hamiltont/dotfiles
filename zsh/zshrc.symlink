@@ -1,5 +1,5 @@
 # Print debug info when loading shell
-DEBUG=true
+DEBUG=false
 
 # shortcut to this dotfiles path is $ZSHDOT
 export ZSHDOT=$HOME/.dotfiles
