@@ -20,3 +20,6 @@ fi
 # Note: This will not auto-update, which is good (or root would
 #       own all your files)
 alias sume="sudo /bin/zsh -c 'HOME=/home/hamiltont; /bin/zsh'"
+
+# Stop zsh from correcting bazaar
+alias bzr="nocorrect bzr"
