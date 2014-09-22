@@ -25,8 +25,8 @@ fi
 # Download the latest configuration in the background. 
 # This will just dump either an "ok" or "not ok" message 
 # into the termal when done
-$DEBUG && echo Updating dotfiles
-cd $ZSHDOT && git pull --ff-only; cd $OLDPWD
+# $DEBUG && echo Updating dotfiles
+# cd $ZSHDOT && git pull --ff-only; cd $OLDPWD
 
 # all of our zsh files
 typeset -U config_files
