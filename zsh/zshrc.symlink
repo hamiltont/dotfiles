@@ -1,6 +1,11 @@
 # Print debug info when loading shell
 DEBUG=false
 
+
+export DISABLE_AUTO_UPDATE=true
+export DISABLE_UPDATE_PROMPT=true
+
+
 # shortcut to this dotfiles path is $ZSHDOT
 export ZSHDOT=$HOME/.dotfiles
 
